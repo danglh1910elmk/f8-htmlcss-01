@@ -650,8 +650,30 @@ a {
 }
 
 .footer .column .social-app-row {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0 17px;
     margin-top: 40px;
+}
+
+.footer .social-app-row a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 28px;
+    width: 28px;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+}
+
+.footer .social-app-row a:hover {
+    background-color: #e3e3e3;
+}
+
+.footer .social-app-row .icon {
+    height: 14px;
+    width: 14px;
 }
 
 /* ==== logo + copyright ====*/
