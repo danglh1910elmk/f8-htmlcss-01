@@ -113,18 +113,16 @@ a {
     line-height: 4rem;
 }
 
-/* ============== Header ============== */
+/* ============== Hero section ============== */
 .hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     position: relative;
     background: #e6f0ff;
     /* subtract the height of navbar: 90px */
     height: calc(100vh - 90px);
-}
-
-/* ============== Hero section ============== */
-.hero-section {
-    /* margin-top: 13rem; */
-    padding-top: 130px;
 }
 
 .hero-info {
@@ -158,7 +156,7 @@ a {
     line-height: 1.7778;
 }
 
-.hero-section .btn {
+.hero-wrapper .hero-info .btn {
     /* margin-top CAN work because the .btn or <a> tag has display: inline-block */
     margin-top: 40px;
     min-width: 170px;
@@ -170,7 +168,6 @@ a {
     bottom: 0;
     /* right: calc((100vw - 1110px) / 2 - 100px); */
     right: calc((100vw - 1110px) / 2 - 80px);
-    /* right: 65px; */
 }
 
 /* ============== Clients ============== */
