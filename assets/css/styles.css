@@ -55,18 +55,19 @@ a {
     overflow: hidden;
 }
 
-/* ============== Header ============== */
-.header {
-    position: relative;
-    background: #e6f0ff;
-    height: 100vh;
+/* ============== Nav bar ============== */
+.sticky-header {
+    background-color: #e6f0ff;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 2;
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    /* margin-top: 3.8rem; */
-    padding-top: 3.8rem;
+    padding: 12px 0;
 }
 
 .navbar ul {
@@ -107,9 +108,18 @@ a {
     line-height: 4rem;
 }
 
+/* ============== Header ============== */
+.hero-wrapper {
+    position: relative;
+    background: #e6f0ff;
+    /* subtract the height of navbar: 90px */
+    height: calc(100vh - 90px);
+}
+
 /* ============== Hero section ============== */
 .hero-section {
-    margin-top: 13rem;
+    /* margin-top: 13rem; */
+    padding-top: 130px;
 }
 
 .hero-info {
@@ -152,9 +162,9 @@ a {
 
 .hero-img {
     position: absolute;
-    /* width: 41%; */
     bottom: 0;
-    right: calc((100vw - 1110px) / 2 - 100px);
+    /* right: calc((100vw - 1110px) / 2 - 100px); */
+    right: calc((100vw - 1110px) / 2 - 80px);
     /* right: 65px; */
 }
 
@@ -686,4 +696,22 @@ a {
     color: #c2c2c2;
     font-size: 1.4rem;
     font-weight: 400;
+}
+
+/* Customize the scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ededed;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b1b1b1;
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #929292;
 }
