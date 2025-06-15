@@ -1,0 +1,664 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0f1b4c;
+    --secondary-color: #5a6473;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* communal */
+a {
+    text-decoration: none;
+}
+
+.content {
+    width: 1110px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 98px;
+    height: 50px;
+    border-radius: 12px;
+    background: var(--primary-color);
+    cursor: pointer;
+
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.heading {
+    color: #000339;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.text {
+    color: var(--secondary-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* not communal */
+
+/* sticky header  */
+.sticky-header {
+    background: #e6f0ff;
+    display: flex;
+    align-items: center;
+
+    padding: 38px 0 10px;
+    position: sticky;
+    top: -28px;
+    z-index: 1;
+}
+
+.sticky-header .navbar {
+    display: flex;
+    align-items: center;
+}
+
+/* navigation  */
+.navbar ul {
+    display: flex;
+    margin-left: 50px;
+}
+
+.navbar ul a {
+    color: #4f5361;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 8px 14px;
+}
+
+.navbar ul a:hover {
+    text-decoration: underline;
+}
+
+.navbar .auth-buttons {
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+    margin-left: auto;
+}
+
+.navbar .sign-in-link {
+    cursor: pointer;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.navbar .sign-in-link:hover {
+    text-decoration: underline;
+}
+
+.navbar .sign-up-btn {
+    height: 40px;
+    border-radius: 8px;
+}
+
+/* hero-container */
+.hero-container {
+    background: #e6f0ff;
+    height: calc(100vh - 48px - 40px); /* subtract the height of navbar */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* hero  */
+.hero .info {
+    width: 51.1%;
+}
+
+.hero .sub-title {
+    color: #687690;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0.018rem;
+}
+
+.hero .title {
+    margin-top: 8px;
+    color: #000336;
+    font-size: 6.4rem;
+    font-weight: 700;
+    line-height: 1.19;
+    line-height: 1.2;
+}
+
+.hero .desc {
+    margin-top: 30px;
+    width: 550px;
+    font-size: 1.8rem;
+    line-height: 1.78;
+}
+
+.hero .btn {
+    margin-top: 40px;
+    min-width: 170px;
+    font-size: 1.3rem;
+}
+
+.hero-img {
+    position: absolute;
+    bottom: 0;
+    right: calc((100vw - 1110px) / 2 - 30px);
+}
+
+/* =============== trust section ================== */
+.trust-section {
+    margin-top: 79px;
+    padding: 43px 0 41px;
+    background: #fff;
+}
+
+.trust-section .rating-stars {
+    display: flex;
+    align-items: center;
+    column-gap: 3.8px;
+}
+
+.trust-section .row + .row {
+    margin-top: 23px;
+}
+
+.trust-section .trust-text,
+.rating-text {
+    color: #7d8589;
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.trust-section .company-logos-container {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trust-section .company-logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 204px;
+    height: 91px;
+    border-radius: 12px;
+    transition: 0.2s ease;
+}
+
+.trust-section .company-logo-link:hover {
+    background: #fff;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* =============== guide section ================== */
+.guide-section {
+    margin-top: 40px;
+    padding: 93px 0 79px;
+}
+
+.guide-section .heading {
+    position: relative;
+    text-align: center;
+    line-height: 1;
+}
+
+.guide-section .heading::before {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    content: "";
+    width: 41px;
+    height: 4px;
+    border-radius: 12px;
+    background: #000339;
+}
+
+.guide-section .desc {
+    margin: 20px auto 0px;
+    width: 459px;
+    max-width: 100%;
+    text-align: center;
+    line-height: 1.88;
+}
+
+.guide-section .option-list {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    column-gap: 140px;
+}
+
+.guide-section .option {
+    text-align: center;
+}
+
+.guide-section .title {
+    margin-top: 26px;
+    color: #3b3c45;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.guide-section .link {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.guide-section .link span {
+    margin-right: 6px;
+    color: #0689ff;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.guide-section .cta-wrapper {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.guide-cta {
+    min-width: 170px;
+    font-size: 1.3rem;
+}
+
+/* =============== property section ================== */
+.property-section {
+    margin-top: 41px;
+    padding: 110px 0;
+    background: #f5fafe;
+}
+
+.property-section .row {
+    margin-top: 15px;
+}
+
+.property-section .row .link {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.property-section .row .link span {
+    color: #0689ff;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* property list  */
+.property-list {
+    margin-top: 68px;
+    display: flex;
+    column-gap: 30px;
+}
+
+.property-list .item {
+    width: calc(calc(100% - 2 * 30px) / 3);
+    flex-grow: 1;
+    border-radius: 12px;
+    background: #fff;
+    overflow: hidden;
+
+    /* This (combine with flex-grow: 1 in .body and margin-top: auto in .row) is 
+    intended to make .body expand to the available vertical space. */
+    display: flex;
+    flex-direction: column;
+}
+
+.property-list .item:hover {
+    box-shadow: 0px 65px 80px -46px rgba(226, 238, 249, 0.6);
+    transition: 0.3 ease;
+}
+
+.property-thumbnail {
+    width: 100%;
+    height: 227px;
+    object-fit: cover;
+
+    /* This will remove the tiny space/gap between <img> and div.body below */
+    vertical-align: bottom;
+    /* or */
+    /* display: block; */
+}
+
+.property-list .body {
+    padding: 17px 20px 23px;
+    /* This (combine with display: flex; AND flex-direction: column in parent 
+    and margin-top: auto in .row) is intended to make .body expand to the available vertical space. */
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.property-list .title a {
+    display: block;
+    color: #000339;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1;
+    /* truncate and display ellipsis when text is too long */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+
+.property-list .desc {
+    margin-top: 11px;
+    margin-bottom: 21px;
+    color: #a3a6ab;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: normal;
+    word-break: break-all;
+    /* truncate and display ellipsis when text is too long */
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.property-list .wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.property-list .body .row {
+    /* work because .row is now a flex item */
+    margin-top: auto;
+}
+
+/* =============== stats section ================== */
+
+.stats {
+    margin-top: 75px;
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.stats .content {
+    width: 1017px;
+}
+
+.stats .wrapper {
+    display: flex;
+}
+
+.stats .img-block {
+    position: relative;
+    width: 51%;
+}
+
+.stats .img-block .image {
+    display: block;
+    margin-left: auto;
+    height: 460px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 40px 80px 155px 0px rgba(30, 103, 113, 0.03);
+}
+
+/* floating card  */
+.floating-card {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    width: 239px;
+    padding: 45px 22px 41px;
+    border-radius: 0px 0px 12px 12px;
+    background: #fff;
+    box-shadow: 90px 85px 100px 0px rgba(0, 0, 0, 0.06);
+}
+
+.floating-card .number {
+    color: #000339;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.026rem;
+}
+
+.floating-card .desc {
+    margin-top: 8px;
+    padding-bottom: 26px;
+    border-bottom: 1.2px solid #e9e9e9;
+    color: #a7a7a7;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* avatar */
+.avatar-block {
+    margin-top: 26px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 14px;
+}
+
+.avatar-group {
+    --background-color: #ccc;
+    display: flex;
+}
+
+.avatar-group .avatar {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    /* properties for text inside  */
+    color: #fff;
+    font-size: 0.7rem;
+    display: flex;
+    letter-spacing: -0.0145rem;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+}
+
+.avatar-group .avatar:nth-child(n + 2) {
+    margin-left: -4px;
+}
+
+/* text block  */
+.stats .text-block {
+    padding-top: 79px;
+    padding-left: 165px;
+}
+
+.stats .text-block .heading {
+    width: 269px;
+    line-height: 1.29;
+    position: relative;
+}
+
+.stats .text-block .heading::before {
+    display: inline-block;
+    content: "";
+    width: 41px;
+    height: 4px;
+    border-radius: 12px;
+    background: #000339;
+    position: absolute;
+    top: -18px;
+    left: 0px;
+}
+
+.stats .text-block .desc {
+    margin-top: 20px;
+    width: 309px;
+    line-height: 1.88;
+}
+
+/*  */
+.stats .content > .row {
+    margin-top: 110px;
+    padding: 0 32px;
+}
+
+.stats .row .item .number {
+    color: #000;
+    font-size: 6.4rem;
+    font-weight: 600;
+}
+
+.stats .row .detail {
+    margin-top: 24px;
+    color: #7b8087;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+/* =============== newsletter signup ================== */
+.newsletter-signup {
+    margin-top: 100px;
+}
+
+.newsletter-signup .body {
+    position: relative;
+    height: 370px;
+    border-radius: 20px;
+    background: #063183;
+    display: flex;
+    align-items: center;
+}
+
+.newsletter-signup .text-block {
+    width: 671px;
+    max-width: 671px;
+    padding: 0px 80px;
+}
+
+.newsletter-signup .heading {
+    color: #fff;
+}
+
+.newsletter-signup .desc {
+    margin-top: 15px;
+    color: #fff;
+    line-height: 1.88;
+    opacity: 0.75;
+}
+
+.newsletter-signup .subscribe-btn {
+    margin-top: 20px;
+    min-width: 151px;
+    background: #fff;
+    color: #002366;
+    font-size: 1.3rem;
+}
+
+.newsletter-signup .floating-phone {
+    position: absolute;
+    right: 20%;
+    bottom: 0px;
+}
+
+/* =============== footer ================== */
+.footer {
+    margin-top: 55px;
+    padding: 50px 0 58px;
+}
+
+.footer .row {
+    align-items: stretch;
+}
+
+.footer .column .heading {
+    color: #1c1c1d;
+    font-family: Lato;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 42px;
+}
+
+.footer .column li:nth-child(n + 2) {
+    margin-top: 18px;
+}
+
+.footer .column .link,
+.footer .column .description {
+    color: #7a7a7e;
+    font-size: 1.6rem;
+    line-height: normal;
+}
+
+.footer .column .link:hover {
+    text-decoration: underline;
+    transition: 0.3s ease;
+}
+
+.footer .column .description {
+    /* width: 257px; */
+    max-width: 257px;
+    line-height: 1.75;
+}
+
+.footer .social-media-container {
+    margin-top: 40px;
+    display: flex;
+    column-gap: 16px;
+}
+
+.footer .social-media-icon {
+    width: 28px;
+    height: 28px;
+}
+
+.footer .social-media-icon:hover {
+    opacity: 0.5;
+}
+
+.footer .last-row {
+    margin-top: 81px;
+    align-items: flex-end;
+}
+
+.footer .copyright {
+    color: #c2c2c2;
+    font-size: 1.4rem;
+    line-height: normal;
+}
