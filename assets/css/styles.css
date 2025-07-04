@@ -428,6 +428,7 @@ a {
 
 .stats .wrapper {
     display: flex;
+    align-items: center;
 }
 
 .stats .img-block {
@@ -508,7 +509,6 @@ a {
 
 /* text block  */
 .stats .text-block {
-    padding-top: 79px;
     padding-left: 165px;
 }
 
