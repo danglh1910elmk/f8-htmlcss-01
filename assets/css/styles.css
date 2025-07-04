@@ -327,13 +327,17 @@ a {
 /* property list  */
 .property-list {
     margin-top: 68px;
-    display: flex;
+    /* display: flex; */
+    /* change to display grid for easier to do responsiveness */
+    display: grid;
     column-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .property-list .item {
-    width: calc(calc(100% - 2 * 30px) / 3);
-    flex-grow: 1;
+    /* not needed because the container is now grid */
+    /* width: calc(calc(100% - 2 * 30px) / 3);
+    flex-grow: 1; */
     border-radius: 12px;
     background: #fff;
     overflow: hidden;

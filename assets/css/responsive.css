@@ -32,6 +32,15 @@
     }
 
     /* mobile header */
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0%);
+    }
+
     .menu-overlay {
         position: fixed;
         inset: 0;
@@ -53,15 +62,6 @@
         transition: 0.5s;
     }
 
-    .menu-checkbox:checked ~ .menu-overlay {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .menu-checkbox:checked ~ .menu-drawer {
-        transform: translateX(0%);
-    }
-
     /* menu content */
     .menu-drawer .toggle-menu {
         display: block;
@@ -81,6 +81,41 @@
 
     .menu-drawer .separation {
         border-top: 1.5px solid #eee;
+    }
+
+    /* hero section  */
+    .hero .info {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .hero .desc {
+        width: 80%;
+        margin: 30px auto 0;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    /* trust section */
+    .trust-section .company-logos-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* guide section */
+    .guide-section .option-list {
+        column-gap: 0;
+        justify-content: space-between;
+    }
+
+    /* properties section */
+    .property-list {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
     }
 }
 
