@@ -409,6 +409,14 @@ a {
     column-gap: 8px;
 }
 
+.property-list .wrapper .spec {
+    color: #4d4d52;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.014rem;
+}
+
 .property-list .body .row {
     /* work because .row is now a flex item */
     margin-top: auto;
@@ -536,7 +544,6 @@ a {
     line-height: 1.88;
 }
 
-/*  */
 .stats .content > .row {
     margin-top: 110px;
     padding: 0 32px;

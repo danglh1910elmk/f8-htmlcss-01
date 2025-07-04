@@ -158,6 +158,10 @@
     .visible-on-mobile {
         display: none;
     }
+
+    .property-section .view-all {
+        display: none;
+    }
 }
 
 /* Mobile */
@@ -169,6 +173,132 @@
     .menu-drawer {
         padding: 40px;
         inset: 0 25% 0 0;
+    }
+
+    /* hero section  */
+    .hero-container {
+        height: calc(100vh);
+        padding-bottom: 30px;
+    }
+
+    .hero .title {
+        margin-top: 20px;
+        font-size: 5.2rem;
+    }
+
+    .hero .desc {
+        width: 100%;
+    }
+
+    /* trust section  */
+    .trust-section .rating-text {
+        display: none;
+    }
+
+    .trust-section .company-logos-container {
+        row-gap: 20px;
+    }
+
+    /* guide section  */
+    .guide-section .option-list {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    /* properties section  */
+    .property-section .heading {
+        font-size: 3.1rem;
+    }
+
+    .property-section .row .link {
+        display: none;
+    }
+
+    .property-section .row .text {
+        line-height: 1.5;
+    }
+
+    .property-list {
+        grid-template-columns: 1fr;
+    }
+
+    .property-list .wrapper {
+        column-gap: 4px;
+    }
+
+    .property-list .wrapper .spec {
+        font-size: 1.3rem;
+    }
+
+    .property-section .view-all {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .property-section .view-all .btn {
+        padding: 0 12px;
+    }
+
+    /* stats section  */
+    .stats .wrapper {
+        flex-direction: column;
+    }
+
+    .stats .img-block {
+        order: 2;
+        width: 100%;
+    }
+
+    .stats .img-block .image {
+        width: 100%;
+    }
+
+    .floating-card {
+        top: 20px;
+        left: 20px;
+        border-radius: 12px;
+    }
+
+    .stats .text-block {
+        order: 1;
+    }
+
+    .stats .content > .row {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .stats .row .detail {
+        text-align: center;
+    }
+
+    /* newsletter section  */
+    .newsletter-signup .body {
+        height: auto;
+    }
+
+    .newsletter-signup .text-block {
+        width: 100%;
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .newsletter-signup .subscribe-btn {
+        align-self: center;
+    }
+
+    /* footer */
+    .footer .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 40px;
+    }
+
+    .footer .last-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
