@@ -112,7 +112,7 @@
         justify-content: space-between;
     }
 
-    /* properties section */
+    /* Properties section */
     .property-list {
         grid-template-columns: repeat(2, 1fr);
         row-gap: 20px;
