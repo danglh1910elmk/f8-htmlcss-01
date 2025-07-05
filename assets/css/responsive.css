@@ -119,12 +119,23 @@
     }
 
     /* Stats section */
+    .stats .wrapper {
+        column-gap: 40px;
+    }
+
     .stats .img-block {
-        transform: scale(0.8);
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+
+    .stats .img-block .image {
+        width: 100%;
+        height: auto;
     }
 
     .stats .text-block {
-        padding-left: 40px;
+        padding: 0px;
+        flex-grow: 1;
     }
 
     .stats .text-block .heading {
@@ -245,6 +256,7 @@
     }
 
     .stats .img-block {
+        margin-top: 40px;
         order: 2;
         width: 100%;
     }
